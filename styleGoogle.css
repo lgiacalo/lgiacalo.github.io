@@ -1,0 +1,225 @@
+html { 
+    margin:0; padding:0; width:98%; height:100%; 
+}
+
+body {
+    min-width: 980px;
+    width: 100%;
+    height:100%;
+}
+#global { 
+    margin:0; padding:0; width:100%; height:100%;
+    position: relative;
+}
+
+#conteneur {
+    width: 100%;
+    top: 0px; left:0;
+    bottom:82px;
+    position: absolute;
+    overflow:auto;
+}
+
+header{
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header div a {
+    color: black;
+}
+
+#sectionImageGoogle {
+    display: flex;
+    height: 205px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 19px;
+}
+
+nav {
+    background: #fff;
+    width: 582px;
+    height: 44px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 10px;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div:first-child {
+    padding-left: 10px;
+}
+
+.searchBar {
+    width: 500px;
+    height: 34;
+}
+
+.searchBar input, .searchBar input:active {
+    font: 16px arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    overflow: auto;
+    word-wrap: break-word;
+    outline: none;
+    flex: 100%;
+}
+
+nav div img, header div {
+    cursor: pointer;
+}
+
+header div, .coronaVirus div, .twoButton div{
+    margin: 6px;
+}
+
+.twoButton {
+    height: 92px;
+    display: flex;
+    justify-content: center;
+}
+
+.twoButton div {
+    padding: 10px 16px 10px 16px;
+    font: 14px arial,sans-serif;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    align-self: center;
+    cursor: pointer;
+}
+
+.twoButton div:hover {
+    border: 1px solid rgb(186, 186, 186);;
+}
+
+.coronaVirus div a, header div a, section p a, .grrr div a {
+    text-decoration: none;
+}
+
+.coronaVirus div a:hover, header div a:hover, section p a:hover, .grrr div a:hover {
+    text-decoration: underline black;
+}
+
+.coronaVirus {
+    display: flex;
+    font: 13px arial,sans-serif;
+    justify-content: center;
+    margin-left: -10px;
+    margin-bottom: 23px;
+}
+
+.coronaVirus div:first-child {
+    margin-top: -3px;
+}
+.coronaVirus div:nth-child(2) {
+    margin-top: 10px;
+    color: #1a0dab;
+}
+
+section p {
+    display: flex;
+    height: 50px;
+    color: #222;
+    font: 13px arial,sans-serif;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    height: 72px;
+    position: absolute;
+    display: flex;
+    border-top: 1px solid #e4e4e4;
+    margin-left: -8px;
+    margin-right: +8px;
+    margin-bottom: 4px;
+    padding-left: 30px;
+    padding-right: 8px;
+
+    flex-direction: column;
+    justify-content: space-around;
+    bottom:6px; left:0;
+    color: rgba(0,0,0,.54);
+    background: #f2f2f2;
+}
+
+.country {
+    font: 15px arial,sans-serif;
+    margin-top: 4px;
+    /* align-self: flex-end; */
+
+}
+.grrr {
+    font: 13.5px arial,sans-serif;
+    padding-top: 10px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e4e4e4;
+}
+
+.grrr div:nth-child(4) {
+    margin-right: 70px;
+}
+.grrr div:nth-child(5) {
+    margin-left: 70px;
+}
+
+section p a, .coronaVirus a {
+    margin-inline-start: 6px;
+    color: #1a0dab;
+}
+
+.grrr div a {
+    color: #5f6368;
+
+}
+
+
+/* Button */
+.loginBtn {
+  position: relative;
+  border: none;
+  font-size: 13.5px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 28px;
+  width: 100px;
+  white-space: nowrap;
+  border-radius: 0.1em;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+}
+.loginBtn:focus {
+  outline: none;
+}
+
+/* connexion */
+.loginBtn--connexion {
+  background-color: #4285f4;
+  text-shadow: 0 -1px 0 #354C8C;
+}
+
+.loginBtn--connexion:hover,
+.loginBtn--connexion:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
