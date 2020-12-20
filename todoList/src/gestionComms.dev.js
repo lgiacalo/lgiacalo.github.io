@@ -16,7 +16,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-var templateLiComm = document.querySelector("#template-li-comm li"); // const classNameButton = ["far", "fa-circle", "fas", "fa-check-circle"];
+var templateLiComm = document.querySelector("#template-li-comm li");
 
 var listComm = document.getElementById("list-comm");
 
@@ -24,12 +24,9 @@ function createNewComm(value, id_com) {
   var clonelicomm = templateLiComm.cloneNode(true);
   console.log('templateLiComm :>> ', templateLiComm);
   console.log('listComm :>> ', listComm);
-  clonelicomm.querySelector("p").textContent = value; // if (check) {
-  //     superToggle(clonelicomm.querySelector("i"), classNameButton);
-  //     cloneli.querySelector("span").classList.toggle("item-check");
-  // }
+  clonelicomm.querySelector("p").textContent = value;
 
-  listComm.insertAdjacentElement('afterbegin', clonelicomm); // clonelicomm.querySelector("a").href += id;
+  listComm.insertAdjacentElement('afterbegin', clonelicomm);
 
   return clonelicomm;
 }
