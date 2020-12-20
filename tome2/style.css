@@ -1,0 +1,326 @@
+@font-face {
+  font-family: "Aniron";
+  src: url("./fonts/Aniron.ttf"), url("./fonts/Aniron.ttf") format("truetype"), local("Arial Black"), local("sherif");
+}
+@font-face {
+  font-family: "PartyBusiness";
+  src: url("./fonts/PartyBusiness-4B0K.ttf"), url("./fonts/PartyBusiness-4B0K.ttf") format("truetype"), local("Arial Black"), local("sherif");
+}
+@font-face {
+  font-family: "Tngani";
+  src: url("./fonts/Tngani.ttf"), url("./fonts/Tngani.ttf") format("truetype"), local("Arial Black"), local("sherif");
+}
+body {
+  background-image: url("../img/bg_light.png");
+  font-family: "Aniron";
+}
+body nav {
+  background-color: #fe661d;
+  font-size: 1.5vw;
+}
+body nav a.navbar-brand {
+  max-width: 70%;
+}
+body nav a,
+body nav p.vertical-bar {
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+}
+body nav a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+  text-decoration-thickness: 0.15em;
+}
+body div.carousel {
+  font-family: "PartyBusiness";
+}
+body div.carousel h1 {
+  font-size: 5vw;
+}
+body div.carousel div p {
+  font-size: 2.5vw;
+}
+body .symb {
+  font-family: "Tngani";
+  color: #fe661d;
+  font-size: 30px;
+  font-weight: lighter;
+}
+body section.thumbnails h1 {
+  font-size: 2em;
+}
+body section.thumbnails .blockquote {
+  font-size: 1rem;
+}
+body section.thumbnails div.pills {
+  color: rgba(102, 102, 102, 0.9);
+  text-align: center;
+}
+body section.thumbnails div.pills div {
+  cursor: pointer;
+}
+body section.thumbnails div.pills .symb {
+  font-size: 15px;
+}
+body section.thumbnails div.pills span.nowrap {
+  white-space: nowrap;
+}
+body section.thumbnails div.pills div.mx-3 {
+  border-bottom: 4px solid #fe661d;
+  color: #fe661d;
+}
+body section.thumbnails div#reward {
+  font-family: "PartyBusiness";
+}
+body section.thumbnails div#reward .card {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(221, 221, 221, 0.7);
+  border-radius: 0;
+  border: 6px solid rgba(0, 0, 0, 0.7);
+  font-size: 2.5vw;
+  max-width: 370px;
+}
+body section.thumbnails div#reward .card img {
+  opacity: 0.7;
+}
+body section.thumbnails div#reward .card .card-title div.card-name {
+  color: white;
+  margin: 0 0 0 0;
+  font-size: 5vw;
+  text-align: center;
+}
+body section.thumbnails div#reward .card .card-img-overlay .rounded {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 3vw;
+}
+body section.thumbnails div#reward .card .card-img-overlay .rounded span {
+  color: #fe661d;
+}
+body hr {
+  border-top: 4px solid #fe661d;
+  margin: 2.5em auto;
+  width: 45%;
+  transform: skew(-45deg);
+}
+body section.contact-us {
+  background-image: url("./img/bg_dark.png");
+  color: white;
+}
+body section.contact-us h1 {
+  font-size: 1.5em;
+}
+body section.contact-us div p {
+  font-family: "PartyBusiness";
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.9);
+}
+body section.contact-us div a {
+  color: #fe661d;
+  transform: skew(-25deg);
+  font-size: 1.5em;
+}
+body section.contact-us div a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.15em;
+}
+body section.media-object div.symb {
+  font-family: "Tngani";
+  color: #fe661d;
+  font-size: 30px;
+  font-weight: lighter;
+}
+body section.media-object h1 {
+  font-size: 1.5em;
+}
+body section.media-object div div {
+  font-family: "PartyBusiness";
+}
+body section.media-object div div h1 {
+  color: #fe661d;
+  font-size: 3em;
+}
+body section.media-object div div p {
+  font-size: 2em;
+}
+body section.media-object div div p span {
+  text-decoration: underline;
+}
+body section.media-object div.race {
+  color: #fe661d;
+  background-image: url("./img/bg_dark.png");
+  transform: skew(-20deg);
+}
+body section.panels {
+  background-image: url("./img/bg_dark.png");
+}
+body section.panels h1 {
+  color: white;
+  font-size: 1.5em;
+}
+body section.panels div.card {
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+}
+body section.panels div.card-header {
+  background-color: #fe661d;
+  border: 2px solid #fe661d;
+  border-radius: 10px 10px 0px 0px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.5em;
+}
+body section.panels div.card-body {
+  background-color: #dddddd;
+  font-family: "PartyBusiness";
+  font-size: 2em;
+  border-bottom: 5px solid #fe661d;
+}
+body section.panels div.card-body div.cite {
+  text-align: right;
+  color: gray;
+}
+body section.panels div.card-body img {
+  max-width: 150px;
+}
+body section.panels div.card-body table {
+  font-family: "Aniron";
+  font-size: 0.5em;
+}
+body section.panels div.card-body table thead tr th {
+  border-bottom: 2px solid black;
+}
+body section.panels div.card-body table tbody {
+  color: rgba(102, 102, 102, 0.9);
+}
+body section.panels div.card-body table tbody tr td {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+}
+body section.join h1 {
+  font-size: 1.5em;
+}
+body section.join .row {
+  font-family: "PartyBusiness";
+  font-size: 1.5em;
+}
+body section.join .row .more-info {
+  font-family: "Aniron";
+  color: #fe661d;
+}
+body section.join .row .more-info div.mail span {
+  display: inline-block;
+  background-image: url("./img/bg_dark.png");
+  border: 1px solid black;
+  transform: skew(-20deg);
+}
+body form#contact {
+  background-image: url("./img/bg_dark.png");
+  color: white;
+}
+body form#contact h1 {
+  font-size: 1.5em;
+}
+
+.card .card-img-overlay h3 {
+  display: none;
+}
+.card:hover .card-img-overlay h3 {
+  display: block;
+}
+
+.round7 {
+  height: 175px;
+  width: 175px;
+  border: 14.5833333333px solid #ffcb00;
+  border-radius: 50%;
+  box-shadow: 4.375px 4.375px 5.8333333333px #997a00, inset 4.375px 4.375px 5.8333333333px #997a00;
+}
+
+.round8 {
+  height: 50px;
+  width: 50px;
+  border: 4.1666666667px solid #f97210;
+  border-radius: 50%;
+  box-shadow: 1.25px 1.25px 1.6666666667px #9f4504, inset 1.25px 1.25px 1.6666666667px #9f4504;
+}
+
+.round1 {
+  height: 34px;
+  width: 34px;
+  border: 2.8333333333px solid #39424e;
+  border-radius: 50%;
+  box-shadow: 0.85px 0.85px 1.1333333333px #0e1013, inset 0.85px 0.85px 1.1333333333px #0e1013;
+  margin-right: -18px;
+}
+
+.round2 {
+  height: 46px;
+  width: 46px;
+  border: 3.8333333333px solid #39424e;
+  border-radius: 50%;
+  box-shadow: 1.15px 1.15px 1.5333333333px #0e1013, inset 1.15px 1.15px 1.5333333333px #0e1013;
+  margin-right: -21px;
+}
+
+.round3 {
+  height: 58px;
+  width: 58px;
+  border: 4.8333333333px solid #39424e;
+  border-radius: 50%;
+  box-shadow: 1.45px 1.45px 1.9333333333px #0e1013, inset 1.45px 1.45px 1.9333333333px #0e1013;
+  margin-right: -24px;
+}
+
+.round4 {
+  height: 70px;
+  width: 70px;
+  border: 5.8333333333px solid #39424e;
+  border-radius: 50%;
+  box-shadow: 1.75px 1.75px 2.3333333333px #0e1013, inset 1.75px 1.75px 2.3333333333px #0e1013;
+  margin-right: -27px;
+}
+
+.round5 {
+  height: 82px;
+  width: 82px;
+  border: 6.8333333333px solid #39424e;
+  border-radius: 50%;
+  box-shadow: 2.05px 2.05px 2.7333333333px #0e1013, inset 2.05px 2.05px 2.7333333333px #0e1013;
+  margin-right: -30px;
+}
+
+.round6 {
+  height: 94px;
+  width: 94px;
+  border: 7.8333333333px solid #39424e;
+  border-radius: 50%;
+  box-shadow: 2.35px 2.35px 3.1333333333px #0e1013, inset 2.35px 2.35px 3.1333333333px #0e1013;
+  margin-right: -33px;
+}
+
+/* Generated by http://responsive-css.spritegen.com Responsive CSS Sprite Generator */
+.aragorn,
+.gimli,
+.gandalf {
+  max-width: 100%;
+  background-size: 100%;
+  background-image: url("./img/sprite.png");
+}
+
+.aragorn {
+  background-position: 0 0%;
+  background-size: 100%;
+}
+
+.gimli {
+  background-position: 0 50.15674%;
+  background-size: 100%;
+}
+
+.gandalf {
+  background-position: 0 100%;
+  background-size: 100.722022%;
+}
+
+/*****************************************************************************************/

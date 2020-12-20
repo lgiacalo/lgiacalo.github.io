@@ -1,0 +1,387 @@
+@use "sass:color";
+
+@font-face {
+    font-family: "Aniron";
+    src: url("../fonts/Aniron.ttf"),
+        url("../fonts/Aniron.ttf") format("truetype"),
+        local("Arial Black"), local("sherif")
+}
+
+@font-face {
+    font-family: "PartyBusiness";
+    src: url("../fonts/PartyBusiness-4B0K.ttf"),
+        url("../fonts/PartyBusiness-4B0K.ttf") format("truetype"),
+        local("Arial Black"), local("sherif")
+}
+
+@font-face {
+    font-family: "Tngani";
+    src: url("../fonts/Tngani.ttf"),
+        url("../fonts/Tngani.ttf") format("truetype"),
+        local("Arial Black"), local("sherif")
+}
+
+$orange: #fe661d;
+$white: rgba(#fff, .90);
+$gray: rgba(#666666, .90);
+
+body {
+    background-image: url('../img/bg_light.png');
+    font-family: "Aniron";
+
+    // h1, h2, h3, h4, h5, h6, {
+    // font-family: "Aniron";
+    // }
+    nav {
+        background-color: $orange;
+        font-size: 1.5vw;
+
+        a.navbar-brand {
+            max-width: 70%;
+        }
+
+        a,
+        p.vertical-bar {
+            color: $white;
+            white-space: nowrap;
+        }
+
+        a:hover {
+            color: $white;
+            text-decoration: underline;
+            text-decoration-thickness: 0.15em;
+        }
+    }
+
+
+
+    div.carousel {
+        font-family: "PartyBusiness";
+
+        h1 {
+            font-size: 5vw;
+        }
+
+        div p {
+            font-size: 2.5vw;
+        }
+    }
+
+    .symb {
+        font-family: "Tngani";
+        color: $orange;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    section.thumbnails {
+
+        h1 {
+            font-size: 2em;
+        }
+
+        .blockquote {
+            font-size: 1rem;
+        }
+
+        div.pills {
+            color: $gray;
+            text-align: center;
+
+            div {
+                cursor: pointer;
+            }
+
+            .symb {
+                font-size: 15px;
+
+            }
+
+            span.nowrap {
+                white-space: nowrap;
+            }
+
+            div.mx-3 {
+                border-bottom: 4px solid $orange;
+                color: $orange;
+            }
+        }
+
+        div#reward {
+            font-family: "PartyBusiness";
+
+            .card {
+                background-color: rgba(#000, .90);
+                color: rgba(#ddd, .70);
+                border-radius: 0;
+                border: 6px solid rgba(#000, .70);
+                font-size: 2.5vw;
+                max-width: 370px;
+
+                img {
+                    opacity: 0.7;
+                }
+
+                .card-title div.card-name {
+                    color: white;
+                    margin: 0 0 0 0;
+                    font-size: 5vw;
+                    text-align: center;
+
+                }
+
+                .card-img-overlay .rounded {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.8);
+                    border-radius: 5px;
+                    color: rgba(#000, .90);
+                    font-size: 3vw;
+
+                    span {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+
+
+    hr {
+        border-top: 4px solid $orange;
+        margin: 2.5em auto;
+        width: 45%;
+        transform: skew(-45deg);
+    }
+
+
+    section.contact-us {
+        background-image: url('../img/bg_dark.png');
+        color: white;
+
+        h1 {
+            font-size: 1.5em;
+        }
+
+        div p {
+            font-family: "PartyBusiness";
+            font-size: 1.5em;
+            color: $white;
+        }
+
+        div a {
+            color: $orange;
+            transform: skew(-25deg);
+            font-size: 1.5em;
+        }
+
+        div a:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 0.15em;
+        }
+    }
+
+    section.media-object {
+
+        div.symb {
+            font-family: "Tngani";
+            color: $orange;
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+
+        div div {
+            font-family: "PartyBusiness";
+
+            h1 {
+                color: $orange;
+                font-size: 3em;
+
+            }
+
+            p {
+                font-size: 2em;
+
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        div.race {
+            color: $orange;
+            background-image: url('../img/bg_dark.png');
+            transform: skew(-20deg);
+
+
+        }
+    }
+
+    section.panels {
+        background-image: url('../img/bg_dark.png');
+
+        h1 {
+            color: white;
+            font-size: 1.5em;
+        }
+
+        div.card {
+            border: none;
+            // border-top: 2px solid $orange;
+            border-radius: 10px 10px 0px 0px;
+
+        }
+
+        div.card-header {
+            background-color: $orange;
+            border: 2px solid $orange;
+            border-radius: 10px 10px 0px 0px;
+            color: rgba(#fff, .90);
+            font-size: 1.5em;
+
+        }
+
+        div.card-body {
+            background-color: #dddddd;
+            font-family: "PartyBusiness";
+            font-size: 2em;
+            border-bottom: 5px solid $orange;
+
+            div.cite {
+                text-align: right;
+                color: gray;
+            }
+
+            img {
+                max-width: 150px;
+            }
+
+            table {
+                font-family: "Aniron";
+                font-size: 0.5em;
+
+                thead tr th{
+                    border-bottom: 2px solid black;
+                }
+                tbody {
+                    color: $gray;
+                    tr td {
+                        border-bottom: 1px solid rgba(gray, .70);
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    section.join {
+        h1 {
+            font-size: 1.5em;
+        }
+        .row {
+            font-family: "PartyBusiness";
+            font-size: 1.5em;
+
+            .more-info{
+                font-family: "Aniron";
+                color: $orange;
+                div.mail span {
+                    display: inline-block;
+                    background-image: url("../img/bg_dark.png");
+                    border: 1px solid black;
+                    transform: skew(-20deg);
+                }
+            }
+        }
+    }
+
+    form#contact {
+        background-image: url('../img/bg_dark.png');
+        color: white;
+
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+
+}
+
+
+
+
+
+
+.card {
+    .card-img-overlay {
+        h3 {
+            display: none;
+        }
+    }
+
+    &:hover .card-img-overlay {
+        h3 {
+            display: block;
+        }
+    }
+}
+
+@mixin ring($size, $color) {
+    height: $size;
+    width: $size;
+    border: $size / 12 solid $color;
+    border-radius: 50%;
+    box-shadow: $size/40 $size/40 $size/30 darken($color, 20%), inset $size/40 $size/40 $size/30 darken($color, 20%);
+}
+
+.round7 {
+    @include ring(175px, #ffcb00)
+}
+
+.round8 {
+    @include ring(50px, #f97210)
+}
+
+@for $i from 1 through 6 {
+    .round#{$i} {
+        @include ring(10px + (($i + 1) * 12), #39424e);
+        margin-right: -(((5 + $i) * 15) * 0.20px);
+    }
+}
+
+
+
+/* Generated by http://responsive-css.spritegen.com Responsive CSS Sprite Generator */
+
+.aragorn,
+.gimli,
+.gandalf {
+    max-width: 100%;
+    background-size: 100%;
+    background-image: url('../img/sprite.png');
+}
+
+.aragorn {
+    background-position: 0 0%;
+    background-size: 100%;
+}
+
+.gimli {
+    background-position: 0 50.15674%;
+    background-size: 100%;
+}
+
+.gandalf {
+    background-position: 0 100%;
+    background-size: 100.722022%;
+}
+
+// <img class="aragorn" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARcAAAFAAQMAAACslqrYAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAD4MLQAAAXCfMgsAAAAASUVORK5CYII=">
+// <img class="gimli" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARcAAAFAAQMAAACslqrYAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAD4MLQAAAXCfMgsAAAAASUVORK5CYII=">
+// <img class="gandalf" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARUAAAE+AQMAAACZSxZUAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAL4GLLgAAZUyMP8AAAAASUVORK5CYII=">
+
+/*****************************************************************************************/

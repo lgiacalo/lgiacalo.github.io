@@ -1,0 +1,71 @@
+@use "sass:color";
+
+@font-face {
+    font-family: "Aniron";
+    src: url("../fonts/Aniron.ttf"),
+        url("../fonts/Aniron.ttf") format("truetype"),
+        local("Arial Black"), local("sherif")
+}
+
+$orange: #fe661d;
+$yellow: #ffc20a;
+$gray: #39424e;
+$white: rgba(#fff, .90);
+
+
+
+body {
+    font-family: "Aniron" !important;
+
+    nav {
+        background-color: $orange;
+        font-size: 1.0vw;
+
+        a.navbar-brand {
+            max-width: 70%;
+        }
+
+        a {
+            color: $white;
+            white-space: nowrap;
+        }
+
+        a:hover {
+            color: $white;
+            text-decoration: underline;
+            text-decoration-thickness: 0.15em;
+        }
+    }
+
+    main {
+        background: url('../img/bg_light.png');
+        color: black;
+        h2 {
+
+            font-size: 3vw;
+        }
+    }
+}
+
+@mixin ring($size, $color) {
+    height: $size;
+    width: $size;
+    border: $size / 12 solid $color;
+    border-radius: 50%;
+    box-shadow: $size/40 $size/40 $size/30 darken($color, 20%), inset $size/40 $size/40 $size/30 darken($color, 20%);
+}
+
+.round7 {
+    @include ring(175px, $yellow);
+}
+
+.round8 {
+    @include ring(50px, $orange);
+}
+
+@for $i from 1 through 6 {
+    .round#{$i} {
+        @include ring(10px + (($i + 1) * 12), $gray);
+        margin-right: -(((5 + $i) * 15) * 0.20px);
+    }
+}
