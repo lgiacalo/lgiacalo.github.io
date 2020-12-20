@@ -1,4 +1,4 @@
-# [TODO LIST](https://lgiacalo.github.io/findThePrecious/todoList)
+# [TODO LIST](https://lgiacalo.github.io/todoList)
 
 ## Tools
 
