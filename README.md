@@ -8,3 +8,6 @@
 # [Tome2](https://lgiacalo.github.io/tome2/)
 # [Grid Bootstrap](https://lgiacalo.github.io/gridBootstrap/)
 # [Todo List](https://lgiacalo.github.io/todoList/)
+
+# [WebSite Weather](https://lgiacalo.github.io/http-request/)
+# [Simpsons Quotes](https://lgiacalo.github.io/ajax-simpsons-quotes/)

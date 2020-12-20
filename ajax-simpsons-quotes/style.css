@@ -1,0 +1,77 @@
+
+body{
+  text-align: center;
+}
+
+h1.title {
+  font-size: 3em;
+  margin-bottom: 0 !important;
+}
+
+button {
+  font-family: Hack, monospace;
+  background: #d3d3d3;
+  color: #2c2c2c;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 1.5rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  width: auto;
+  position: relative;
+  min-width: 250px;
+  margin-bottom: 1em;
+}
+
+a {
+  display: block;
+  color: #17a2b8;
+  margin-bottom: 1.5em;
+
+}
+
+#simpson {
+  margin: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div#simpson figure {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  padding: 1.25em;
+  max-width: 600px;
+  border: 1px solid #f8f8f8;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  font-size: 1.2em;
+}
+
+div#simpson figure figcaption {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div#simpson figure img {
+  max-height: 120px;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+div#simpson figure blockquote {
+  margin: 0 0 1rem 0;
+}
+
+div#simpson figure figcaption cite {
+  display: inline-block;
+  margin: 0.125rem 0 0 0;
+  display: flex;
+}
+
