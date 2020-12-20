@@ -1,4 +1,4 @@
-# [Lord of The Rings](https://lgiacalo.github.io/findThePrecious/gridBootstrap/)
+# [Lord of The Rings](https://lgiacalo.github.io/gridBootstrap/)
 
 ![Lord of The Rings](integration_oeil.png)
 
